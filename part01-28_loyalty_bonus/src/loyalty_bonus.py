@@ -4,7 +4,7 @@ if points < 100:
     points *= 1.1
     print("Your bonus is 10 %")
 
-if points >= 100:
+else:
     points *= 1.15
     print("Your bonus is 15 %")
 
