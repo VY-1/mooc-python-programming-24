@@ -4,3 +4,12 @@ from math import sqrt
 
 # Note that the square root can also be calculated using power.
 # sqrt(9) is equivalent to 9 ** 0.5
+
+a = int(input("Value of a: "))
+b = int(input("Value of b: "))
+c = int(input("Value of c: "))
+
+root1 = (float)(-b + sqrt(b**2 - 4*a*c))/(2*a)
+root2 = (float)(-b - sqrt(b**2 - 4*a*c))/(2*a)
+
+print(f"The roots are {root1} and {root2}")
