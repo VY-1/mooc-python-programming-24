@@ -7,3 +7,5 @@ count = 0
 while count < height:
     print(width*hash)
     count +=1
+    
+
