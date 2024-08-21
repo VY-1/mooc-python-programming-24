@@ -4,7 +4,7 @@ word = input("Please type in a string: ")
 vowels ="aeo"
 counter = 0
 
-while counter < 3:
+while counter < len(vowels):
     if vowels[counter] in word:
         print(f"{vowels[counter]} found")
     else:
