@@ -11,4 +11,3 @@ while count <= user_input:
     
 print(my_items)
     
-    
