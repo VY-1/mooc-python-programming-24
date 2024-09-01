@@ -16,5 +16,8 @@ if __name__ == "__main__":
     game_board = [["", "", ""], ["", "", ""], ["", "", ""]]
     print(play_turn(game_board, 2, 0, "X"))
     print(game_board)
+    
+    print(play_turn(game_board, 2, 1, "X"))
+    print(game_board)
 
     print(play_turn([['X', '', ''], ['', '', 'O'], ['', 'O', '']], 3, 0, "X"))
