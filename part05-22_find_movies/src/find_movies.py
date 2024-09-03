@@ -3,7 +3,7 @@
 def find_movies(database: list, search_term: str) -> list:
     new_list = []
     for movie in database:
-        
+
         if search_term.casefold() in movie["name"].casefold():
             new_list.append(movie)
 
