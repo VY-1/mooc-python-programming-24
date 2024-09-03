@@ -5,8 +5,8 @@ def transpose(matrix: list):
     for row in matrix:
         new_matrix.append(row[:])   #copy elements in the row
     
-    for row in range(3):
-        for col in range(3):
+    for row in range(len(matrix)):
+        for col in range(len(matrix)):
             matrix[col][row] = new_matrix[row][col]    
     
     
