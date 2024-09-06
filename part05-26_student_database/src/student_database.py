@@ -31,9 +31,9 @@ def add_course(students:dict, name:str, course:tuple):
 
 def summary(students: dict):
     most_courses = 0
-    most_courses_name = ''
+    most_courses_name = ""
     best_avg = 0
-    best_avg_name = ''
+    best_avg_name = ""
     for student, courses_data in students.items():
         if len(courses_data) > most_courses:
             most_courses = len(courses_data)
@@ -43,9 +43,9 @@ def summary(students: dict):
             best_avg = avg_grade
             best_avg_name = student
 
-    print(f'students {len(students)}')
-    print(f'most courses completed {most_courses} {most_courses_name}')
-    print(f'best average grade {best_avg} {best_avg_name}')
+    print(f"students {len(students)}")
+    print(f"most courses completed {most_courses} {most_courses_name}")
+    print(f"best average grade {best_avg} {best_avg_name}")
         
 if __name__ == "__main__":
     students = {}
