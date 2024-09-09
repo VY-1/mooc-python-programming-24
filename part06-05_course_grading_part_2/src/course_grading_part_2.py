@@ -1,12 +1,14 @@
 # write your solution here
-if False:
+if True:
     student_info = input("Student information: ")
     exercise_complete = input("Exercises completed: ")
-    exam_points = inpu("Exam points: ")
+    exam_points = input("Exam points: ")
 else:
-    student_info = "students1.csv"
-    exercise_complete = "exercises1.csv"
-    exam_points = "exam_points1.csv"
+    student_info = "src/students1.csv"
+    exercise_complete = "src/exercises1.csv"
+    exam_points = "src/exam_points1.csv"
+    
+    
 students = {}
 with open(student_info) as student_file:
     for line in student_file:
