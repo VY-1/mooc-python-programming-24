@@ -1,6 +1,6 @@
 # Write your solution here
 
-def read_file(file_in: str):
+def read_file(file_in: str)-> list:
     contents = []
     with open(file_in) as new_file:
         for line in new_file:
@@ -8,7 +8,7 @@ def read_file(file_in: str):
             contents.append(line)
 
     return contents
-def word_with_dot(search_word, word):
+def word_with_dot(search_word, word)-> bool:
     
     for i in range(len(search_word)):
         if search_word[i] == ".":      #checking for edge case
@@ -21,7 +21,7 @@ def word_with_dot(search_word, word):
 
 
 
-def find_words(search_term: str):
+def find_words(search_term: str)->list:
     found_list = []
     words = read_file("words.txt")
     for word in words:
