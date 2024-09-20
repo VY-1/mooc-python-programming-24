@@ -12,7 +12,7 @@ def word_with_dot(search_word, word)-> bool:
     
     for i in range(len(search_word)):
         if search_word[i] == ".":      #checking for edge case
-            continue
+            continue                   #continue to the next iteration
 
         if search_word[i] != word[i]:
             return False    #word does not match if they are not the same
