@@ -1,7 +1,6 @@
 # Write your solution here
 import csv
 from datetime import datetime, time, timedelta
-from operator import index
 
 
 def read_csv(file_in: str):
