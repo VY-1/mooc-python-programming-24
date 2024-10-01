@@ -17,4 +17,3 @@ class Cable:
         self.max_speed = max_speed
         self.bidirectional = bidirectional
 
-    
