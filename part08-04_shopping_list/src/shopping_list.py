@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
 
     my_list = ShoppingList()
-    
+
     my_list.add("bananas", 10)
     my_list.add("apples", 5)
     my_list.add("pineapple", 1)
