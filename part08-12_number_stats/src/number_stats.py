@@ -39,28 +39,3 @@ print(f"Sum of numbers: {stats.get_sum()}")
 print(f"Mean of numbers: {stats.average()}")
 print(f"Sum of even numbers: {even_stats.get_sum()}")
 print(f"Sum of odd numbers: {odd_stats.get_sum()}")
-
-    
-#if __name__ == "__main__":
-#     stats = NumberStats()
-#     stats.add_number(3)
-#     stats.add_number(5)
-#     stats.add_number(1)
-#     stats.add_number(2)
-#     print("Numbers added:", stats.count_numbers())
-
-#     stats = NumberStats()
-#     stats.add_number(3)
-#     stats.add_number(5)
-#     stats.add_number(1)
-#     stats.add_number(2)
-#     print("Numbers added:", stats.count_numbers())
-#     print("Sum of numbers:", stats.get_sum())
-#     print("Mean of numbers:", stats.average())
-
-#     #Test case for no number added
-#     stats = NumberStats()
-#     print("Numbers added:", stats.count_numbers())
-#     print("Sum of numbers:", stats.get_sum())
-#     print("Mean of numbers:", stats.average())
-
