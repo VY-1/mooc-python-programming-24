@@ -31,3 +31,66 @@ class WordGame():
         print(f"player 1: {self.wins1}")
         print(f"player 2: {self.wins2}")
 
+class LongestWord(WordGame):
+    def __init__(self, rounds: int):
+        super().__init__(rounds)
+
+    def round_winner(self, player1_word: str, player2_word: str):
+        if len(player1_word) > len(player2_word):
+            return 1
+        elif len(player1_word) < len(player2_word):
+            return 2
+        else:
+            return
+
+class MostVowels(WordGame):
+    def __init__(self, rounds: int):
+        super().__init__(rounds)
+
+    def round_winner(self, player1_word: str, player2_word: str):
+        vowels = "aeiou"
+        player1_vowels = ""
+        player2_vowels = ""
+
+        for char1 in player1_word:
+            if char1 in vowels:
+                player1_vowels += char1
+        for char2 in player2_word:
+            if char2 in vowels:
+                player2_vowels +=char2
+        if len(player1_vowels) > len(player2_vowels):
+            return 1
+        elif len(player1_vowels) < len(player2_vowels):
+            return 2
+        else:
+            return
+
+class RockPaperScissors(WordGame):
+    def __init__(self, rounds: int):
+        super().__init__(rounds)
+
+    def round_winner(self, player1_word: str, player2_word: str):
+
+        words = ["rock", "scissors", "paper"]
+        if player1_word == "rock" and player2_word == "scissors":
+            return 1
+        elif player1_word == "scissors" and player2_word == "rock":
+            return 2
+        elif player1_word == "paper" and player2_word == "rock":
+            return 1
+        elif player1_word == "rock" and player2_word == "paper":
+            return 2
+        elif player1_word == "scissors" and player2_word == "paper":
+            return 1
+        elif player1_word == "paper" and player2_word == "scissors":
+            return 2
+        elif player1_word in words and player2_word not in words:
+            return 1
+        elif player2_word in words and player1_word not in words:
+            return 2
+        else:
+            return
+
+if __name__=="__main__":
+    p = MostVowels(3)
+    p.play()
