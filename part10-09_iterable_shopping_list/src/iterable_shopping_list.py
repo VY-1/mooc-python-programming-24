@@ -17,7 +17,7 @@ class ShoppingList:
         return self.products[n - 1][1]
 
     def __iter__(self):
-        self.n = 0
+        self.n = 0      #starting index at 0
 
         return self     #returns reference object as iterator is implemented with the same class definition
 
