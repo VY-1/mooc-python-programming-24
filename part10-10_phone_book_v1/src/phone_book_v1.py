@@ -15,6 +15,11 @@ class PhoneBook:
             return None
         return self.__persons[name]
 
+    def get_by_number(self, number: str):
+        for name, numbers in self.all_entries().items():
+            if number in numbers:
+                return name
+        return "unknown number"
 
     def all_entries(self):
         return self.__persons
@@ -71,12 +76,8 @@ class PhoneBookApplication:
 
     def search_by_number(self):
         number = input("number: ")
-        for name, numbers in self.__phonebook.all_entries().items():
-            if number in numbers:
-                print(name)
-                return
-        print("unknown number")
-        return
+        name = self.__phonebook.get_by_number(number)
+        print(name)
 
     def exit(self):
         self.__filehandler.save_file(self.__phonebook.all_entries())
