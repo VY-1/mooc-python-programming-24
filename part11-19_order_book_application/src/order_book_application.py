@@ -1,7 +1,5 @@
 # Write your solution here
 # If you use the classes made in the previous exercise, copy them here
-from scripts.regsetup import description
-
 
 class Task:
     id = 0
